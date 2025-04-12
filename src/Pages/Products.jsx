@@ -3,7 +3,7 @@ import useFetch from '../hooks/useFetch'
 import Card from '../component/Card'
 
 const Products = () => {
-    const [loading, error, data] = useFetch('https://dummyjson.com/products')
+    const [loading, error, data] = useFetch('https://dummyjson.com/products/search?q=phone')
 
     if (loading) {
         return <div className=' flex justify-center h-[80vh] items-center text-3xl font-bold'>
